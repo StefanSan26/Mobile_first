@@ -1,0 +1,320 @@
+/* 
+1. Posicionamiento
+2. Modelo de Caja
+3. Tipografía
+4. Visuales
+5. Otros
+*/
+:root{
+    /*Colores:Aqui se van a guardar como variables*/
+    --bitcoin-orange: #F7931A; 
+    --soft-orange: #FFE9D5;
+    --secondary-blue: #1A9AF7;
+    --soft-blue:#E7F5FF;
+    --warm-black:#201E1C;
+    --black:#282623;
+    --gray:#BABABA;
+    --off-white:#FAF8F7;
+    --just--white:#fff;
+}
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+}
+html{
+    font-size:62.5%;
+    font-family:'DM Sans', sans-serif; /*Se establece ocmo base este ya que es el que mas se va a usar*/
+}
+header{
+    position: relative;/*Para posicionar otros elementos mas facilmente con absolute*/
+    display: flex; /*nos ayuda bastante a posicionar y facilita el Responsive design*/
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center; /*Al aplicar ditection column se modifican las propiedades del flex por lo que se aplica esto para centrar los elementos*/
+    width: 100%;
+    min-width: 32rem; /*Esto es el minimo pixelage en dispositivos moviles*/
+    height: 33.4rem;
+    text-align: center;
+    background: linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%);;
+}
+header img{
+    width: 15rem;
+    height: 2.4rem;
+    /* margin-top: 6rem; */
+    /* align-self: center; Centrar elementos hijos */
+}
+.header__title-container{
+    width: 90%;
+    min-width: 28.8rem;
+    max-width: 90rem;
+    height: 22rem;
+    margin-top: 5rem;
+    /* text-align: center; */
+}
+.header__title-container h1{
+    margin: 3rem 0;
+    color: var(--just--white);
+    font-size: 2.4rem;
+    line-height: 2.6rem;
+}
+.header__title-container p{
+    color: var(--soft-orange);
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    font-weight: 500;
+}
+header a{
+    position: absolute;
+    left: calc(50% - 115px);
+    width: 229px;
+    height: 48px;
+    top: 310px;
+    padding: 15px;
+    background: #FAF8F7;
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    text-decoration: none;
+    color: var(--black);
+}
+header a span{
+    display: inline-block;
+    width: 13px;
+    height: 8px;
+    margin-left: 10px;
+    background-image: url('./assets/icons/down-arrow.svg');
+}
+main{
+    height: auto;
+    width: 100%;
+    min-width: 32rem;
+    background-color: var(--off-white);  
+}
+.exchange{
+    height: auto;
+    width: 100%;
+    min-width: 32rem;
+    text-align: center;
+}
+.exchange img{
+    margin: 5rem auto;
+}
+/*imagen como bg
+.exchange .bgimg{
+    witdh:20 rem;
+    height:20 rem;
+    margin:0 auto;
+    margin-bottom:5rem;
+    background-image: url("./assets/img/Bitcoin.svg");
+    background-size-cover;
+    background-postion: center;
+    background-repeat: no-repeat;
+*/
+.exchange .exchange__text{
+    width: 90%;
+    margin: 0 auto;
+    
+}
+.exchange .exchange__text h2{
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 2.4rem;
+    line-height: 2.6rem;
+    /* max-width: 900px; */
+    margin: 0 auto;
+    margin-bottom: 2.5rem;
+    color: var(--black);
+}
+.exchange .exchange__text p{
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    color: #757575;
+}
+.exchange .exchange__currency{
+    text-align: center;
+}
+.exchange-table{
+    width: 70%;
+    min-width: 20rem;
+    max-width: 50rem;
+    height: 30rem;
+    margin: 0 auto;
+    font-family: "Inter",sans-serif;
+}
+.exchange-table .exchange-table__title{
+    margin-bottom: 1rem ;
+    color: #FF9536;
+    width: 8.1rem;
+    height: 2.3rem;
+    font-weight: bold;
+    font-size: 1.8rem;
+    line-height:2.3rem;
+    margin-top: 3rem;
+}
+.exchange-table .currency-table__title{
+    margin-bottom: 1rem ;
+    color: var(--secondary-blue);
+    width: 8.1rem;
+    height: 2.3rem;
+    font-weight: bold;
+    font-size: 1.8rem;
+    line-height:2.3rem;
+    margin-top: 3rem;
+}
+.exchange-table table{
+    width:100%;
+    height: 16rem;
+    min-width: 23rem;
+    max-width: 30rem;
+    margin: 0 auto;
+}
+
+.exchange-table td{
+    width: 50%;
+    font-size: 1.6rem;
+    font-weight: 50rem;
+    line-height: 1.9rem;
+    color: var(--gray);
+    background-color: var(--just--white);
+}
+.exchange-table .exchange-table--top-left{
+    border-radius: 15px 0 0 0;
+}
+.exchange-table .exchange-table--top-right{
+    border-radius: 0 15px 0 0;
+}
+.exchange-table .exchange-table--bottom-left{
+    border-radius: 0 0 0 15px;
+}
+.exchange-table .exchange-table--bottom-right{
+    border-radius: 0 0 15px 0 ;
+}
+.exchange-table .exchange-table--right{
+    color: #757575;
+    font-size: 1.4rem;
+}
+.exchange-table .down{
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-left: 1rem;
+    background-image: url('./assets/icons/trending-down.svg');
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+}
+.exchange-table .up{
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-left: 1rem;
+    background-image: url('./assets/icons/trending-up.svg');
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+}
+.exchange-table .exchange-table__date, .exchange-table .currency-table__date {
+    height: 3.1rem;
+    width: 20rem;
+    max-width: 25rem;
+    min-width: 17rem;
+    margin: 1.5rem auto;
+    padding: 0.8rem;
+    border-radius: 8px;
+    background-color: var(--soft-orange);
+    
+}
+.exchange-table .exchange-table__date p ,.currency-table__date p{
+    font-family: 'Inter',sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    text-align: center;
+    color: var(--warm-black);
+}
+.exchange-table .currency-table__date {
+    background-color:var(--soft-blue)
+}
+
+/*Contenedor Benefits*/
+.benefits{
+    width: 100%;
+    min-width: 32rem;
+    background-color:#201E1C ;
+}
+.benefits__batata{
+    height: 3rem;
+    width: 5rem;
+    background-image: url("./assets/icons/batata.svg");
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    display: inline-block;
+    position: relative;
+    left: calc(50% - 3rem);
+    bottom: 2rem;
+}
+.benefits__description{
+    width: 85%;
+    margin: 0 auto;
+}
+.benefits__description h2{
+    text-align: center;
+    font-weight: bold;
+    font-size: 2.4rem;
+    line-height: 2.6rem;
+    color: var(--just--white);
+    margin-bottom: 2rem;
+}
+.benefits__description p{
+    text-align: center;
+    margin:2rem auto;
+}
+.benefits p{
+    margin-top: 1rem;
+    color: #808080;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+}
+
+.benefits h3{
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+    font-weight: bold;
+    color: var(--just--white);
+    /* margin: 1rem; */
+}
+
+.benefits__time, .benefits__fees, .benefits__currency, .benefits__info{
+    /* height: 15rem; */
+    width: 90%;
+    min-width: 25rem;
+    max-width: 40rem;
+    margin: 2.5rem auto;
+    padding:2rem;
+    background-color: #282623;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.16);
+    border-radius: 4px;
+} 
+.benefits__time span,.benefits__fees span, .benefits__currency span, .benefits__info span{
+    display: block;
+    height: 2.4rem;
+    width: 2.4rem;
+    margin-bottom: 1rem;
+}
+.benefits__time span{
+    background-image: url(./assets/icons/clock.svg); 
+}
+.benefits__fees span{
+    background-image: url(./assets/icons/eye.svg);
+}
+.benefits__currency span{
+    background-image: url(./assets/icons/dollar-sign.svg);
+}
+.benefits__info span{
+    background-image: url(./assets/icons/check-circle.svg);
+}
