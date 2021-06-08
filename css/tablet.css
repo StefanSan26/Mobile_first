@@ -1,0 +1,14 @@
+.exchange-table-container{
+    display: flex;
+    width: 93rem;
+    margin:0 auto;
+}
+.benefits-container{
+    display: flex;
+    flex-wrap: wrap;   
+    width: 93rem;
+    margin: 0 auto;
+}
+.cards{
+    justify-content: center;
+}
