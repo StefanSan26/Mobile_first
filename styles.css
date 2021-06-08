@@ -25,6 +25,7 @@
 html{
     font-size:62.5%;
     font-family:'DM Sans', sans-serif; /*Se establece ocmo base este ya que es el que mas se va a usar*/
+    scroll-behavior: smooth;
 }
 header{
     position: relative;/*Para posicionar otros elementos mas facilmente con absolute*/
@@ -244,6 +245,7 @@ main{
 .benefits{
     width: 100%;
     min-width: 32rem;
+    padding-bottom: 2.5rem;
     background-color:#201E1C ;
 }
 .benefits__batata{
@@ -317,4 +319,136 @@ main{
 }
 .benefits__info span{
     background-image: url(./assets/icons/check-circle.svg);
+}
+.plans{
+    width: 100%;
+    min-width: 32rem;
+    padding-bottom: 7rem;
+}
+.plans__girl{
+    background-image: url(./assets/img/bitcoinbaby2x.jpg);
+    height: 70vh;
+    width: 100%;
+    min-width: 32rem;
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    display: inline-block;
+    margin: 0 auto;
+}
+.plans__girl p{
+    text-align: center;
+    padding-top: 7rem;
+    color: var(--just--white);
+    font-weight: bold;
+    font-size: 2.4rem;
+    line-height: 2.6rem;
+}
+.plans h2{
+    margin-top: 5rem;
+    font-weight: bold;
+    font-size: 2.4rem;
+    line-height: 2.6rem;
+    text-align: center;
+    /* padding: 1rem; */
+}
+.plans__choose{
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    text-align: center;
+    color: #757575;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    padding: 2rem;
+}
+.card{
+    position: relative;
+    width: 19rem;
+    height: 25rem;
+    margin: 0 auto;
+    top: 26px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+    border-radius: 8px;
+}
+.card .card__recommended{
+    align-items: center;
+    padding: 8px;
+    position: absolute;
+    top: -2rem;
+    left: calc(50% - 50px);
+    width: 101px;
+    height: 31px;
+    background-color: var(--bitcoin-orange);
+    border-radius: 8px;  
+}
+.card__recommended p{
+    text-align: center;
+    color: var(--just--white);
+    font-family: "Inter",sans-serif;
+    font-weight: 500;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+}
+.card__annual{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    color: #000000;
+    padding-top: 2.3rem;
+}
+.card__price{
+
+}
+.card__price--amount{
+    padding-top: 1.5rem;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    font-size: 52px;
+    line-height: 63px;
+    font-family: 'Inter',sans-serif;
+}
+.card__price #card__price--sign{
+    font-size: 1.2rem;
+    font-weight: normal;
+    line-height: 1.5rem;
+    position: relative;
+    top: -2.5rem;
+}
+.card__budget{
+    text-align: center;
+    padding: 1rem;
+    color: #757575;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    font-family: 'Inter',sans-serif;
+}
+.card__choose{
+    height: 4.8rem;
+    width: 15rem;
+    background-color: var(--off-white);
+    border: 2px solid  var(--bitcoin-orange);
+    border-radius: 4px;
+    align-items: center;
+    padding: 0.5rem;
+    margin: 0 auto;
+}
+.card__choose p{
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    color: var(--warm-black);
+}
+.card__choose span{
+    background-image: url(./assets/icons/orange-right-arrow.svg);
+    display: inline-block;
+    height: 2rem;
+    width: 2rem;
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
 }
