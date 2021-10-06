@@ -1,2 +1,4 @@
-# Mobile_first
-Primer proyecto que hago con Responsive Design
+# Mobile First Course Project
+First Web Page made with Responsive Design
+
+Live Site URL: [Here](https://stefansan26.github.io/Mobile_first/)
